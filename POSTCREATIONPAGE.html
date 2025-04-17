@@ -1,0 +1,90 @@
+<html>
+<head>
+    <title>Post Creation Page</title>
+    <script src="POSTCREATIONPAGESCRIPT.js"></script>
+</head>
+<body>
+    <form id="createPostForm">
+        <div id="navBar">
+            eduPortal &#9679; CREATE POST
+        </div>
+
+        <br>
+
+        <div class="webTitleContainer">
+            <div class="postContainer">
+                CREATE A NEW POST
+                <input type="datetime-local" id="datetime-local" name="dateT">
+            </div>
+        </div>
+
+        <br>
+
+        <div id="createTitleInput">
+            <input type="text" id="createTitle" name="titleT" placeholder="ADD TITLE" required>
+        </div>
+
+        <br>
+
+        <div id="gradeInput">
+            &#11206;
+            <input type="checkbox" name="grade9T" value="grade9">
+            <label for="Grade9">Grade 9</label>
+            <input type="checkbox" name="grade10T" value="grade10">
+            <label for="Grade10">Grade 10</label>
+            <input type="checkbox" name="grade11T" value="grade11">
+            <label for="Grad11">Grade 11</label>
+            <input type="checkbox" name="grade12T" value="grade12">
+            <label for="Grade12">Grade 12</label>
+        </div>
+
+        <br>
+
+        <div class="descriptionInput">
+            <textarea id="descriptionInput" name="descriptionT" placeholder="ADD TEXT" rows="10" cols="60"></textarea>
+        </div>
+
+        <br>
+
+        <div class="tagInput">
+            <label for="tagCatagory">&#11206; CATAGORY OF POST</label>
+            <select id="tagCatagory" name="catagoryT" required>
+                <option value="General">General</option>
+                <option value="Academic">Academics</option>
+                <option value="Sports">Sports</option>
+                <option value="Events">Events</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div class="clubInput">
+            <label for="clubInput">&#11206; CATAGORY OF CLUB</label>
+            <select id="clubInput" name="clubT" required>
+                <option value="HackClub">Hack Club</option>
+                <option value="HOSA">HOSA</option>
+                <option value="MUN">Model UN (MUN)</option>
+                <option value="EcoClub">Eco Club</option>
+                <option value="StudentCouncil">Student Council</option>
+                <option value="DebateClub">Debate Club</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div class="imageUpload">
+            <label for="imageUpload">&#11206; ADD IMAGE</label>
+            <input type="file" id="imageUpload" name="imageT">
+        </div>
+
+
+        <br>
+
+        <div class="actionButton">
+            <button type="button" onclick="addNewAnnouncement()">CONFIRM</button>
+            <button type="button" onclick="draftFunction()">SAVE AS DRAFT</button> 
+            <button type="button" onclick="deleteFunction()">DELETE</button>
+        </div>
+    </form>
+</body>
+</html>
